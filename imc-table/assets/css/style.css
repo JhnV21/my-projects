@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --main-color: rgb(12, 89, 48);
+    --main-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-color);
+    font-family: var(--main-font);
+}
+
+.container {
+    border-radius: 10px;
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+.container h1 {
+    font-size: 2rem;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.left-texts {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.right-texts {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.left-texts p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.right-texts p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.imc-calculator {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.imc-calculator h1 {
+    margin-bottom: 10px;
+}
+
+#weight {
+    margin: 5px 0;
+    width: 100%;
+    outline: none;
+    height: 40px;
+}
+
+#height {
+    margin: 5px 0;
+    width: 100%;
+    outline: none;
+    height: 40px;
+}
+
+#button {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    background: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#weight:focus {
+    border: 1px solid rgb(40, 201, 131);
+}
+
+#height:focus {
+    border: 1px solid rgb(40, 201, 131);
+}
+
+#button:hover {
+    background: rgb(13, 150, 45);
+}
+
+#answer {
+    display: inline-block;
+    color: white;
+}
