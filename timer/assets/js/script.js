@@ -25,3 +25,6 @@ pauseButton.addEventListener('click', function(){
 restartButton.addEventListener('click', function() {
     clock.innerHTML = '00:00:00';
 })
+
+
+// NOT FINISHED
